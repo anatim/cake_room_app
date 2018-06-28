@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Cake Room</string>
+
+    <string name="btn_shop_now">SHOP NOW</string>
+    <string name="my_account">MY ACCOUNT</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">LOG OUT</string>
+    <string name="home">HOME</string>
+    <string name="register">REGISTER</string>
+    <string name="stores">OUR STORES</string>
+    <string name="loyalty">LOYALTY PROGRAM</string>
+    <string name="contact">CONTACT US</string>
+    <string name="gallery">GALLERY</string>
+
+
+    <string name="menu">Menu</string>
+
+
+    <string name="search_menu">SEARCH</string>
+    <string name="shCart">SHOPPING CART</string>
+
+    <string name="app_text">CAKE ROOM</string>
+
+    <string name="ic_cakes">CAKES</string>
+    <string name="ic_cupcakes">CUPCAKES</string>
+    <string name="ic_macarons">MACARONS</string>
+    <string name="ic_cookies">COOKIES</string>
+
+    <string name="my_bio">MY BIO</string>
+    <string name="loyalty_points">LOYALTY POINTS</string>
+    <string name="about">ABOUT US</string>
+    <string name="settings">SETTINGS</string>
+    <string name="deact_acc">DEACTIVATE ACCOUNT</string>
+
+    <string name="hello_draw_layout">Hello Drawer Layout</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_drawer_ac2">DrawerAc2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User Name</string>
+    <string name="nav_header_subtitle">example@anymail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
