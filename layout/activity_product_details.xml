@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout_product_details"
+    tools:context=".ProductDetailsActivity">
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+
+<LinearLayout
+    android:id="@+id/layoutVertCupcakeCategories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/colorLightGreyBackground"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <requestFocus />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            android:id="@+id/productHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtVwProductName"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="PRODUCT NAME"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgVwProductImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginStart="5dp"
+                    android:elevation="0dp"
+                    android:scaleType="fitStart"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tableLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/straw_cupcake_small" />
+
+                <TableLayout
+                    android:id="@+id/tableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="3dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtVwProductPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="80dp"
+                            android:text="Price per each: "
+                            android:textAlignment="textStart"
+                            android:textStyle="bold"
+                            android:focusable="false"
+                            android:visibility="visible" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtVwProductReviews"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Reviews: "
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtVwProductLoyaltyPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Loyalty Points: "
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </android.support.constraint.ConstraintLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productPrice"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content">
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productLoyaltyPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/productChooseQuantity"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:visibility="visible">>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productSetQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtVwChooseQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal|center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Choose Quantity:"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTxtChooseQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="8"
+                    android:hint="1"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productBtnAddToCart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorRaspberry"
+                android:elevation="0dp"
+                android:text="ADD TO CART"
+                android:textColor="@android:color/background_light"
+                android:visibility="visible" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/productAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutPAvailability"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtVwPAvailability"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Check availability at a preferred store:"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/rdShop1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onChange"
+                        android:text="Shop 1 CBD" />
+
+                    <RadioButton
+                        android:id="@+id/rdShop2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onChange"
+                        android:text="Shop 2 Ponsonby" />
+
+                    <RadioButton
+                        android:id="@+id/rdShop3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:onClick="onChange"
+                        android:text="Shop 3 Parnell" />
+
+                    <RadioButton
+                        android:id="@+id/rdShop4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:onClick="onChange"
+                        android:text="Shop 4 Henderson" />
+
+                    <RadioButton
+                        android:id="@+id/rdShop5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:onClick="onChange"
+                        android:text="Shop 5 Rosedale" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/pCheckAvail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnCheckAvail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:elevation="0dp"
+                android:text="CHECK"
+                android:textColor="@color/colorRaspberry" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/preferredShop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtVwSelectedShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+
+                android:text="Thank you for choosing your preferred shop"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/productCategories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtVwProductDescription"
+                android:layout_width="120dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Description: "
+                android:textStyle="bold" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/productIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtVwProductIngredients"
+                android:layout_width="120dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:text="Ingredients:"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/productID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtVwProductID"
+                android:layout_width="120dp"
+                android:layout_height="18dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="ID: 12001"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
+</ScrollView>
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header">
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

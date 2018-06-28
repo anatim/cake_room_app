@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/checkout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <requestFocus />
+
+
+    <TextView
+        android:id="@+id/txtVwCheckoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="CHECK OUT"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCardHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Holder Name"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editExpDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiration MM/YY"
+        android:inputType="date"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editSecCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Security Code"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:hint="Subtotal"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Order Total"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <CheckBox
+        android:id="@+id/chBOnHold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Place the item(s) on hold: max. 6 hours" />
+
+    <TextView
+        android:id="@+id/txtVwPrefStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:hint="Choose the store to pick the items at:"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/rdShop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onChange"
+            android:text="Shop 1 CBD" />
+
+        <RadioButton
+            android:id="@+id/rdShop2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onChange"
+            android:text="Shop 2 Ponsonby" />
+
+        <RadioButton
+            android:id="@+id/rdShop3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:onClick="onChange"
+            android:text="Shop 3 Parnell" />
+
+        <RadioButton
+            android:id="@+id/rdShop4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:onClick="onChange"
+            android:text="Shop 4 Henderson" />
+
+        <RadioButton
+            android:id="@+id/rdShop5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:onClick="onChange"
+            android:text="Shop 5 Rosedale" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtVwSelectedShopCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Thanks, the shop is chosen!"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorRaspberry"
+        android:onClick="checkoutCheck"
+        android:text="Place order"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+
+
+</LinearLayout>
+    </ScrollView>

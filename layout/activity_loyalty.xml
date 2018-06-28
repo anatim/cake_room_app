@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame_layout_loyalty"
+    tools:context=".LoyaltyAc">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtVwLoyalty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:text="LOYALTY PROGRAM"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtVwLoyaltyDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:lineSpacingExtra="8sp"
+        android:text="Swipe your Loyalty Card at the checkout or enter the card number online when you shop at Cake Room to earn rewards.
+
+You'll get a certain amount of points for every product you purchase with us. Every 100 points gets you a $10 Free Purchase! Starting June 2018, these rewards will be loaded onto your Loyalty Card.
+
+As soon as you have earned a Free Purchase it will be loaded onto your nominated Loyalty Card (we’ll notify you by email when it’s available.) Simply use it when you want in-store, at the self-checkout and online, or save it for up to 12 months.
+
+There's no limit to how many rewards you can earn. The more you shop with us, the more you'll save!"
+        android:textAlignment="textStart" />
+
+</LinearLayout>
+</FrameLayout>
+
+
